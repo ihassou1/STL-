@@ -1,0 +1,85 @@
+% This LaTeX file contains your written lab questions.  You may answer
+% these questions just by inserting your answer into this document.
+%
+% If you're unfamiliar with LaTeX, see the document LearningLaTeX.tex
+% in this same directory.  It contains a brief explanation and a few
+% snippets of LaTeX code to get you started; in fact, it should have
+% everything you need to complete this assignment.
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{algpseudocode}
+\usepackage{algorithmicx}
+\usepackage{alltt}
+\usepackage{enumerate}
+
+\newtheorem{claim}{Claim}
+
+\begin{document}
+    \section{Inductive Proofs}
+
+    Prove each of the following claims by induction
+
+    \begin{claim}
+      The sum of the first $n$ even numbers is $n^2+n$.  That is, $\sum\limits_{i=1}^n 2i = n^2 + n$
+    \end{claim}
+
+      %%%%%%%%%%%%%%
+      %%%% TODO %%%%
+      %%%%%%%%%%%%%%
+      % Write your proof of the above statement here.
+
+
+    \begin{claim}
+      $\sum\limits_{i=1}^{n} \dfrac{1}{2^i} = 1 - \dfrac{1}{2^n}$
+    \end{claim}
+
+      %%%%%%%%%%%%%%
+      %%%% TODO %%%%
+      %%%%%%%%%%%%%%
+      % Write your proof of the above statement here.
+
+
+    \begin{claim}
+      $\sum\limits_{i=0}^{n} 2^i = 2^{n+1}-1$
+    \end{claim}
+
+      %%%%%%%%%%%%%%
+      %%%% TODO %%%%
+      %%%%%%%%%%%%%%
+      % Write your proof of the above statement here.
+
+
+    \vspace{1cm}
+    \section{Recursive Invariants}
+    
+    The function \texttt{minEven}, given below in pseudocode, takes as
+    input an array $A$ of size $n$ of numbers.  It returns the
+    smallest \textit{even} number in the array.  If no even numbers
+    appear in the array, it returns positive infinity ($+\infty$).
+    Using induction, prove that the \texttt{minEven} function works
+    correctly.  Clearly state your recursive invariant at the
+    beginning of your proof.
+
+    \begin{alltt}
+Function minEven(A,n)
+  If n = 0 Then
+    Return +\ensuremath{\infty}
+  Else
+    Set best To minEven(A,n-1)
+    If A[n-1] < best And A[n-1] is even Then
+      Set best To A[n-1]
+    EndIf
+    Return best
+  EndIf
+EndFunction
+    \end{alltt}
+
+    %%%%%%%%%%%%%%
+    %%%% TODO %%%%
+    %%%%%%%%%%%%%%
+    % Give your recursive invariant and your proof here.
+
+\end{document}
