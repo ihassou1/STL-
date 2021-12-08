@@ -1,0 +1,25 @@
+        9
+    4       8
+  4   3   7   2
+ 3 1 2 2 6 4 1
+
+:Delete root node (9) and replace with last node (1).
+        1
+    4       8
+  4   3   7   2
+ 3 1 2 2 6 4
+ :Bubble down: compare 1 with children and swap with max child.
+         8
+     4       1
+   4   3   7   2
+  3 1 2 2 6 4
+  :Bubble down: compare 1 with children and swap with max child.
+          8
+      4       7
+    4   3   1   2
+   3 1 2 2 6 4
+   :Bubble down: compare 1 with children and swap with max child.
+           8
+       4       7
+     4   3   6   2
+    3 1 2 2 1 4 

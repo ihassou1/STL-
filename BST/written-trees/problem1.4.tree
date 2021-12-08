@@ -1,0 +1,19 @@
+            40
+     24               54
+  12    36       46       80
+11            42    50  79  81
+                43
+:After removing 54, we replace it with 50 (the predecessor) and delete 50.
+            40
+     24               50
+  12    36       46       80
+11            42        79  81
+                43
+
+:To rebalance the tree, rightRotate(46), where X and Z are null and Y is 43.
+
+            40
+     24               50
+   12    36       42       80
+11            43     46  79  81
+ 
